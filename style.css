@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    width: 100%;
+}
+:root {
+    --bg-color: #a500cb
+}
+/******************************General CSS********************************************/
+.container{
+    max-width: 1440px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/************************************************************************************/
+header {
+    padding: 1.5rem 0rem;
+}
+.head__text {
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.head__navbar ul{
+    justify-content: center;
+    gap: 4rem;
+}
+.head__navbar a {
+    font-size: 1.2rem;
+    color: black;
+}
+.head__navbar a:hover {
+    color: var(--bg-color);
+}
+.head__btn {
+   padding: 1rem 2.5rem;
+   border: 2px solid var(--bg-color);
+   color: var(--bg-color);
+   font-size: 1rem;
+   background-color: white;
+}
+.head__btn:hover {
+    background-color: rgb(185, 133, 235);
+    color: white;
+}
+.head__btn:active {
+    background-color: skyblue;
+    color: blue;
+}
