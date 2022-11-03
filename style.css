@@ -156,7 +156,7 @@ header {
 }
 /*********************************************************************************************************/
 
-/* Start of like and share option */
+/************************************** Start of like and share Section***********************************/
 
 .like_Share {
     background: url("./image/yellow-des-background.jpg") no-repeat fixed center/cover;
@@ -185,21 +185,120 @@ header {
     padding: 1rem 3.3rem;
 }
 
+/***********************************************Start of OUR SERVICES Section***********************************/
+
+.services h1 {
+    font-size: 2.8rem;
+    color: var(--bg-color);
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.services__box {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+.services__box__row h3 {
+    font-size: 1.9rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+.services__box__row p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 4rem;
+    color: gray;
+    
+}
+.services__box__row i {
+    padding-right: .5rem;
+}
+.services__box__row .fa-solid, .services__box__row .fa-regular{
+    color: var(--bg-color);
+}
+
+/**************************************Start of About us Section****************************************/
+
+.about {
+    margin-top: 4rem;
+    background-color: rgb(239, 237, 237);
+    /* flex-wrap: wrap; */
+}
+.about__birdimage img{
+    max-width: 90%;
+}
+.about__text {
+    padding-right: 5rem;
+    
+}
+.about__text h1 {
+ font-size: 2.5rem;
+ font-weight: 500;
+ color: var(--bg-color);
+ margin-bottom: 1rem;
+}
+.about__text p {
+ font-size: 1rem;
+ font-weight: 500;
+ color: gray;
+ margin-bottom: 1rem;
+ margin-bottom: 2rem;
+}
+.about_icon_row h3 {
+    font-size: 1.5rem;
+}
+
+/***********************************************Email Section Start*****************************************/
+.foot {
+    text-align: center;
+    margin-top: 5rem;
+}
+.foot p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.foot .btn--sizes {
+    padding: 10px;
+    min-width: 5%;
+    border-radius: 5px;
+}
+.foot input {
+    min-width: 25%;
+    padding: 10px;
+    border: 1px solid var(--bg-color);
+    border-radius: 5px;
+}
+.foot__icon {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.foot__icon .fa-brands {
+    font-size: 1.4rem;
+    color: var(--bg-color);
+}
+
+/**************************************************FOOTER SECTION********************************************/
+footer{
+    text-align: center;
+    border-top: 1px solid rgb(209, 207, 207);
+    padding: 1rem;
+    font-size: 1.3rem;
+}
 
 
 
 
 
-
-
-
-
-
-/***********************************************Fot tab/phone*****************************/
+/***********************************************For tab/phone*****************************/
 
 .head1 {
     display: none;
-    padding: .5rem 1rem;
+    padding: 1rem;
 }
 .head1__text a{
     color: var(--bg-color);
@@ -207,25 +306,39 @@ header {
     font-weight: bolder;
 }
 .head1__icon {
-    padding: 1rem 1.5rem;
+    padding: .5rem 1.5rem;
     border: 1px solid #ccc;
 }
 /*********************************Media Query TAB*******************************************/
-@media (min-width:600px) and (max-width:900px)
+@media (min-width:600px) and (max-width:1280px)
 {
-    .head{
+    header{
         display: none;
     }
     .head1 {
         display: flex;
         justify-content: space-between;
     }
+    .services__box__row h3 {
+        font-size: 1.4rem;
+    }
+    .services__box__row p {
+        font-size: 1rem;
+    }
+    .about__text {
+        padding-right: 0rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    .about img {
+        max-width:100%;
+    }
 }
 
 /***********************************Media Query Phone****************************************/
 @media (min-width:0px) and (max-width:600px)
 {
-    .head{
+    header{
         display: none;
     }
     .head1 {
@@ -246,5 +359,31 @@ header {
     }
     .features p {
         padding: 0rem 1rem;
+    }
+    .services__box {
+        flex-direction: column;
+    }
+    .about_icon {
+        display: none;
+    }
+    .about__text {
+        padding-right: 0rem;
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    .about img {
+        max-width: 100%;
+    }
+    .about__text h1 {
+        font-size: 1.8rem;
+    }
+    .about__text p {
+        font-size: 1rem;
+    }
+}
+@media (max-width:1055px)
+{
+    .about{
+        flex-direction: column;
     }
 }
