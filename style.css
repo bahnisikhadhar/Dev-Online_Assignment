@@ -14,7 +14,7 @@ body {
 /******************************General CSS********************************************/
 .container{
     max-width: 1440px;
-    padding: 0 10px;
+    padding: 0 3rem;
     margin: 0 auto;
 }
 .flex {
@@ -26,7 +26,12 @@ body {
 header {
     padding: 1.5rem 0rem;
 }
-.head__text {
+.head {
+    max-width:1440px ;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.head__text a {
     color: var(--bg-color);
     font-size: 1.5rem;
     font-weight: bolder;
@@ -56,4 +61,190 @@ header {
 .head__btn:active {
     background-color: skyblue;
     color: blue;
+}
+
+/**********************************************Start of FIRST BANNER*******************************************/
+
+.first_banner {
+    background: url("./image/technical_background.jpg") no-repeat fixed center/cover;
+    height: 35rem;
+    text-align: center;
+    padding-top:10rem  ;
+}
+.first_banner__text {
+    background-color: transparent;
+    height: 40rem; 
+}
+.first_banner h1 {
+    font-size: 3rem;
+    color:var(--bg-color);
+    margin-bottom: 1rem;
+}
+.first_banner p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.btn--purple {
+    background-color: var(--bg-color);
+    margin-right: .7rem;
+}
+.btn--purple:hover {
+    background-color:rgb(185, 133, 235) ;
+}
+.btn--purple:active {
+    background-color: blueviolet;
+}
+.btn--blue {
+    background-color: rgb(103, 103, 225);
+}
+.btn--blue:hover{
+    background-color: skyblue;
+}
+.btn--blue:active {
+    background-color: blueviolet;
+}
+/********************************************************End of first banner *************************************/
+
+/*****************************************Start of Fantastic Features Section***************************************/
+.features {
+    text-align: center;
+    margin-top: 5rem;
+}
+.features h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+.features p {
+    font-size: 1.3rem;
+    color: gray;
+}
+.features__boxes{
+    margin-top: 3.5rem;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.responsive {
+    max-width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    overflow-y: hidden;
+}
+.responsive img {
+    width: 70%;
+    margin-bottom: 1.5rem;
+}
+.responsive img[alt="responsive"]
+{
+    width: 90%;
+}
+.responsive h2 {
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+/*********************************************************************************************************/
+
+/* Start of like and share option */
+
+.like_Share {
+    background: url("./image/yellow-des-background.jpg") no-repeat fixed center/cover;
+    height: 25rem;
+    display: flex;
+    justify-content: end;
+    /* align-items: center; */
+    padding-right: 7rem;
+    padding-top: 7rem;
+}
+.like_share__text {
+        background-color: transparent;
+        height: 40rem; 
+}
+.like_share__text h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+.like_share__text p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn--size {
+    padding: 1rem 3.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************Fot tab/phone*****************************/
+
+.head1 {
+    display: none;
+    padding: .5rem 1rem;
+}
+.head1__text a{
+    color: var(--bg-color);
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+.head1__icon {
+    padding: 1rem 1.5rem;
+    border: 1px solid #ccc;
+}
+/*********************************Media Query TAB*******************************************/
+@media (min-width:600px) and (max-width:900px)
+{
+    .head{
+        display: none;
+    }
+    .head1 {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/***********************************Media Query Phone****************************************/
+@media (min-width:0px) and (max-width:600px)
+{
+    .head{
+        display: none;
+    }
+    .head1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .features__boxes {
+        flex-direction: column;
+    }
+    .responsive {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .like_Share {
+        padding-right: 3rem;
+        padding-left: 1rem;
+        padding-top: 2.5rem;
+    }
+    .features p {
+        padding: 0rem 1rem;
+    }
 }

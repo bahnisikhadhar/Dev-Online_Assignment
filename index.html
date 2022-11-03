@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!------------------------------------HEADER Starts HERE--------------------------------------------------->
     <header>
-      <div class="head flex container">
-       <h1 class="head__text">DEV ONLINE</h1>
+      <div class="head flex">
+       <div class="head__text"><a href="#"> DEV ONLINE</a></div>
        <nav class="head__navbar">
         <ul class="flex">
             <li><a href="#"> Home</a></li>
@@ -23,6 +26,56 @@
        <button class="head__btn">Request A Quote</button>
     </div>
     </header>
+     <!--------------------------------------FOR RESPONSIVE----------------------------------------------------->
+     <header class="head1">
+        <div class="head1__text"><a href="#"> DEV ONLINE</a></div>
+         <div class="head1__icon"><i class="fa fa-bars"></i></div>
+    </header>
+    <!---------------------------------------------------------------------------------------------------------->
+
+    <!-- Start of Main Body -->
+
+    <main>
    <!-------------------------------------First Banner Portion------------------------------------------------->
+   <section class="first_banner">
+    <div class="first_banner__text">
+       <h1>DEV ONLINE</h1>
+       <p>The Power of Bootstrap Discover it with The Future.New HTML Templates Genaration.</p>
+       <button class="btn btn--purple">Learn More</button>
+       <button class="btn btn--blue">Services</button>
+       </div>
+   </section>
+  <!-------------------------------------Fantastic Feature Section--------------------------------------------->
+  <section class="features">
+    <h1>Fantastic Features <br> & Different Types of Template</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br> been the industry's standard dummy text ever since the 1500s, when an unknown printer took <br> a galley of type and scrambled it to make a type specimen book.</p>
+    <div class="features__boxes container">
+        <div class="responsive">
+            <img src="image\responsive1.jpeg" alt="responsive">
+            <h2>Responsive</h2>
+            <p>It is a long established fact that a <br> reader will be distracted by the <br> readable content of a page when <br> looking at its layout. The point of using <br> Lorem Ipsum is that it has a more-or- <br> less normal distribution of letters.</p>
+        </div>
+        <div class="responsive">
+            <img src="image\ui &ux.png" alt="ui">
+            <h2>UI/UX</h2>
+            <p>It is a long established fact that a <br> reader will be distracted by the <br> readable content of a page when <br> looking at its layout. The point of using <br> Lorem Ipsum is that it has a more-or- <br> less normal distribution of letters.</p>
+        </div>
+        <div class="responsive">
+            <img src="image\flexible.jpeg" alt="flexible">
+            <h2>FLEXIBLE</h2>
+            <p>It is a long established fact that a <br> reader will be distracted by the <br> readable content of a page when <br> looking at its layout. The point of using <br> Lorem Ipsum is that it has a more-or- <br> less normal distribution of letters.</p>
+        </div>
+    </div>
+  </section>
+  <!----------------------------------------------LIKE & SHARE Section------------------------------------------->
+  <section class="like_Share">
+    <div class="like_share__text">
+        <h1>Like & Share Your Love</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry.</p>
+        <button class="btn btn--purple btn--size">Show</button>
+    </div>
+
+  </section>
+</main>
 </body>
 </html>
